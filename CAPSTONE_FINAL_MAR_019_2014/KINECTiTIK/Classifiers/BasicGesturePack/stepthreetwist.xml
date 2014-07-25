@@ -1,0 +1,28 @@
+<ClassifierParams hidden="false">
+    <GestureDataParams vectorSize="1" voteSize="3" refractoryPeriod="15" isRefractoryPerGroup="true" usePositions="false" usePositionsX="false" usePositionsY="false" usePositionsZ="false" useDeltas="false" useDeltasX="false" useDeltasY="false" useDeltasZ="false" useRelativePositions="true" useRelativePositionsX="true" useRelativePositionsY="true" useRelativePositionsZ="true" useRotation="false" useRotationX="false" useRotationY="false" useRotationZ="false" flipx="false" useHeadConfidence="false" relativeJoint="torso" isRepetitive="true" fps="30">
+        <Joints>
+            <Joint name="leftFoot" X="true" Y="true" Z="false" />
+            <Joint name="hips" X="true" Y="true" Z="true" />
+            <Joint name="torso" X="true" Y="true" Z="true" />
+        </Joints>
+        <Scale normalizeMean="false" normalizeSTD="false" doLocalScale="false" doGlobalScale="false" perCoordScaling="false" useSmooth="false" smoothStrength="0" />
+    </GestureDataParams>
+    <LearningParams useLinear="false" gestureExpand="0" otherOverlap="0.0000" useWeights="true" weightFactor1="0.70" weightFactor2="5" testToleranceRight="2" testToleranceLeft="2" cost="3.00" gamma="-13.00" linearSolver="0" useSynthetic="false">
+        <TrainFiles>
+            <File path="C:\Users\Diaz\Desktop\latest gestures\binasuan\Sequences\Seq17\Seq17.seq" />
+        </TrainFiles>
+        <TestFiles>
+            <File path="C:\Users\Diaz\Desktop\latest gestures\binasuan\Sequences\Seq18\Seq18.seq" />
+        </TestFiles>
+        <OutputFile path="C:\Users\Diaz\Desktop\latest gestures\binasuan\Build\stepthreetwist.xml" />
+        <Result avgAccuracy="0.982139" trainAccuracy="0.998287" testAccuracy="0.977167" confusionMatrix="" />
+    </LearningParams>
+    <Gestures framesBefore="0">
+        <Gesture categoryName="stepthreetwist" gestureName="stepthreetwist" label="3" />
+        <Gesture categoryName="xnegative" gestureName="xnegative" label="2" />
+        <Gesture categoryName="other" gestureName="other" label="1" />
+    </Gestures>
+    <Model fileName="stepthreetwist.model" />
+    <Date created="1/19/2014 2:33:44 AM" published="" />
+    <Comment value="" />
+</ClassifierParams>

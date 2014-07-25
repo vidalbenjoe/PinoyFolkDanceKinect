@@ -1,0 +1,34 @@
+<ClassifierParams hidden="false">
+    <GestureDataParams vectorSize="5" voteSize="6" refractoryPeriod="9" isRefractoryPerGroup="true" usePositions="false" usePositionsX="false" usePositionsY="false" usePositionsZ="false" useDeltas="false" useDeltasX="false" useDeltasY="false" useDeltasZ="false" useRelativePositions="true" useRelativePositionsX="true" useRelativePositionsY="true" useRelativePositionsZ="true" useRotation="false" useRotationX="false" useRotationY="false" useRotationZ="false" flipx="false" useHeadConfidence="false" relativeJoint="torso" isRepetitive="true" fps="30">
+        <Joints>
+            <Joint name="head" X="false" Y="true" Z="true" />
+        </Joints>
+        <Scale normalizeMean="false" normalizeSTD="false" doLocalScale="false" doGlobalScale="false" perCoordScaling="false" useSmooth="false" smoothStrength="0" />
+    </GestureDataParams>
+    <LearningParams useLinear="false" gestureExpand="0" otherOverlap="0.0000" useWeights="true" weightFactor1="1.00" weightFactor2="30" testToleranceRight="2" testToleranceLeft="2" cost="3.50" gamma="-13.00" linearSolver="0" useSynthetic="false">
+        <TrainFiles>
+            <File path="C:\Users\Benjoe\Documents\Omek\GAT\Gesture Packs\tutorial_gestures\Sequences\Seq0\Seq0.seq" />
+            <File path="C:\Users\Benjoe\Documents\Omek\GAT\Gesture Packs\tutorial_gestures\Sequences\Seq0_2\Seq0.seq" />
+            <File path="C:\Users\Benjoe\Documents\Omek\GAT\Gesture Packs\tutorial_gestures\Sequences\Seq0_3\Seq0.seq" />
+        </TrainFiles>
+        <TestFiles>
+            <File path="C:\Users\Benjoe\Documents\Omek\GAT\Gesture Packs\tutorial_gestures\Sequences\Seq0_4\Seq0.seq" />
+            <File path="C:\Users\Benjoe\Documents\Omek\GAT\Gesture Packs\tutorial_gestures\Sequences\Seq0_5\Seq0.seq" />
+            <File path="C:\Users\Benjoe\Documents\Omek\GAT\Gesture Packs\tutorial_gestures\Sequences\Seq0_6\Seq0.seq" />
+            <File path="C:\Users\Benjoe\Documents\Omek\GAT\Gesture Packs\tutorial_gestures\Sequences\Seq0_7\Seq0.seq" />
+            <File path="C:\Users\Benjoe\Documents\Omek\GAT\Gesture Packs\tutorial_gestures\Sequences\Seq0_8\Seq0.seq" />
+            <File path="C:\Users\Benjoe\Documents\Omek\GAT\Gesture Packs\tutorial_gestures\Sequences\Seq0_9\Seq0.seq" />
+            <File path="C:\Users\Benjoe\Documents\Omek\GAT\Gesture Packs\tutorial_gestures\Sequences\Seq0_10\Seq0.seq" />
+        </TestFiles>
+        <OutputFile path="C:\Users\Benjoe\Documents\Omek\GAT\Gesture Packs\tutorial_gestures\Build\righthand.xml" />
+        <Result avgAccuracy="1" trainAccuracy="1" testAccuracy="1" confusionMatrix="" />
+    </LearningParams>
+    <Gestures framesBefore="2">
+        <Gesture categoryName="righthand" gestureName="righthand" label="3" />
+        <Gesture categoryName="xnegative" gestureName="xnegative" label="2" />
+        <Gesture categoryName="other" gestureName="other" label="1" />
+    </Gestures>
+    <Model fileName="righthand.model" />
+    <Date created="1/19/2014 8:54:00 PM" published="" />
+    <Comment value="" />
+</ClassifierParams>

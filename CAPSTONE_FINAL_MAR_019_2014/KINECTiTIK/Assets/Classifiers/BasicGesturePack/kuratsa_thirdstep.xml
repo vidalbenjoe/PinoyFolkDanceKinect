@@ -1,0 +1,36 @@
+<ClassifierParams hidden="false">
+    <GestureDataParams vectorSize="15" voteSize="1" refractoryPeriod="1" isRefractoryPerGroup="true" usePositions="false" usePositionsX="false" usePositionsY="false" usePositionsZ="false" useDeltas="true" useDeltasX="true" useDeltasY="true" useDeltasZ="true" useRelativePositions="false" useRelativePositionsX="false" useRelativePositionsY="false" useRelativePositionsZ="false" useRotation="false" useRotationX="false" useRotationY="false" useRotationZ="false" flipx="false" useHeadConfidence="false" relativeJoint="torso" isRepetitive="false" fps="30">
+        <Joints>
+            <Joint name="head" X="true" Y="true" Z="true" />
+            <Joint name="rightFingerTip" X="true" Y="true" Z="true" />
+            <Joint name="leftFingerTip" X="true" Y="true" Z="true" />
+            <Joint name="hips" X="true" Y="true" Z="true" />
+        </Joints>
+        <Scale normalizeMean="true" normalizeSTD="false" doLocalScale="true" doGlobalScale="false" perCoordScaling="false" useSmooth="false" smoothStrength="0" />
+    </GestureDataParams>
+    <LearningParams useLinear="false" gestureExpand="0" otherOverlap="0.0000" useWeights="true" weightFactor1="0.75" weightFactor2="5" testToleranceRight="3" testToleranceLeft="7" cost="3.00" gamma="-14.00" linearSolver="0" useSynthetic="false">
+        <TrainFiles>
+            <File path="C:\Users\Ashley\Documents\Omek\GAT\Gesture Packs\Kuratsa_Pose\Sequences\Seq11\Seq11.seq" />
+            <File path="C:\Users\Ashley\Documents\Omek\GAT\Gesture Packs\Kuratsa_Pose\Sequences\Seq11_2\Seq11.seq" />
+        </TrainFiles>
+        <TestFiles>
+            <File path="C:\Users\Ashley\Documents\Omek\GAT\Gesture Packs\Kuratsa_Pose\Sequences\Seq11_3\Seq11.seq" />
+            <File path="C:\Users\Ashley\Documents\Omek\GAT\Gesture Packs\Kuratsa_Pose\Sequences\Seq11_4\Seq11.seq" />
+            <File path="C:\Users\Ashley\Documents\Omek\GAT\Gesture Packs\Kuratsa_Pose\Sequences\Seq11_5\Seq11.seq" />
+            <File path="C:\Users\Ashley\Documents\Omek\GAT\Gesture Packs\Kuratsa_Pose\Sequences\Seq11_6\Seq11.seq" />
+            <File path="C:\Users\Ashley\Documents\Omek\GAT\Gesture Packs\Kuratsa_Pose\Sequences\Seq11_7\Seq11.seq" />
+            <File path="C:\Users\Ashley\Documents\Omek\GAT\Gesture Packs\Kuratsa_Pose\Sequences\Seq11_8\Seq11.seq" />
+            <File path="C:\Users\Ashley\Documents\Omek\GAT\Gesture Packs\Kuratsa_Pose\Sequences\Seq11_9\Seq11.seq" />
+        </TestFiles>
+        <OutputFile path="C:\Users\Ashley\Documents\Omek\GAT\Gesture Packs\Kuratsa_Pose\Build\kuratsa_thirdstep.xml" />
+        <Result avgAccuracy="1" trainAccuracy="1" testAccuracy="1" confusionMatrix="" />
+    </LearningParams>
+    <Gestures framesBefore="14">
+        <Gesture categoryName="kuratsa_thirdstep" gestureName="kuratsa_thirdstep" label="3" />
+        <Gesture categoryName="xnegative" gestureName="xnegative" label="2" />
+        <Gesture categoryName="other" gestureName="other" label="1" />
+    </Gestures>
+    <Model fileName="kuratsa_thirdstep.model" />
+    <Date created="1/18/2014 3:46:19 AM" published="" />
+    <Comment value="" />
+</ClassifierParams>

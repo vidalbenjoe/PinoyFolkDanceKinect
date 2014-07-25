@@ -1,0 +1,36 @@
+<ClassifierParams hidden="false">
+    <GestureDataParams vectorSize="1" voteSize="1" refractoryPeriod="1" isRefractoryPerGroup="true" usePositions="false" usePositionsX="false" usePositionsY="false" usePositionsZ="false" useDeltas="false" useDeltasX="false" useDeltasY="false" useDeltasZ="false" useRelativePositions="true" useRelativePositionsX="true" useRelativePositionsY="true" useRelativePositionsZ="true" useRotation="false" useRotationX="false" useRotationY="false" useRotationZ="false" flipx="false" useHeadConfidence="false" relativeJoint="torso" isRepetitive="true" fps="30">
+        <Joints>
+            <Joint name="rightShoulder" X="true" Y="false" Z="true" />
+        </Joints>
+        <Scale normalizeMean="false" normalizeSTD="false" doLocalScale="false" doGlobalScale="false" perCoordScaling="false" useSmooth="false" smoothStrength="0" />
+    </GestureDataParams>
+    <LearningParams useLinear="false" gestureExpand="0" otherOverlap="0.0000" useWeights="true" weightFactor1="0.75" weightFactor2="5" testToleranceRight="2" testToleranceLeft="2" cost="3.00" gamma="-14.00" linearSolver="0" useSynthetic="false">
+        <TrainFiles>
+            <File path="C:\Users\Benjoe\Documents\Omek\GAT\Gesture Packs\itikitik_gestures_new\Sequences\Seq35\Seq35.seq" />
+            <File path="C:\Users\Benjoe\Documents\Omek\GAT\Gesture Packs\itikitik_gestures_new\Sequences\Seq35_2\Seq35.seq" />
+            <File path="C:\Users\Benjoe\Documents\Omek\GAT\Gesture Packs\itikitik_gestures_new\Sequences\Seq35_2_2\Seq35.seq" />
+        </TrainFiles>
+        <TestFiles>
+            <File path="C:\Users\Benjoe\Documents\Omek\GAT\Gesture Packs\itikitik_gestures_new\Sequences\Seq35_2_3\Seq35.seq" />
+            <File path="C:\Users\Benjoe\Documents\Omek\GAT\Gesture Packs\itikitik_gestures_new\Sequences\Seq35_2_4\Seq35.seq" />
+            <File path="C:\Users\Benjoe\Documents\Omek\GAT\Gesture Packs\itikitik_gestures_new\Sequences\Seq35_2_5\Seq35.seq" />
+            <File path="C:\Users\Benjoe\Documents\Omek\GAT\Gesture Packs\itikitik_gestures_new\Sequences\Seq35_2_6\Seq35.seq" />
+            <File path="C:\Users\Benjoe\Documents\Omek\GAT\Gesture Packs\itikitik_gestures_new\Sequences\Seq35_2_7\Seq35.seq" />
+            <File path="C:\Users\Benjoe\Documents\Omek\GAT\Gesture Packs\itikitik_gestures_new\Sequences\Seq35_2_8\Seq35.seq" />
+            <File path="C:\Users\Benjoe\Documents\Omek\GAT\Gesture Packs\itikitik_gestures_new\Sequences\Seq35_2_9\Seq35.seq" />
+            <File path="C:\Users\Benjoe\Documents\Omek\GAT\Gesture Packs\itikitik_gestures_new\Sequences\Seq35_2_10\Seq35.seq" />
+            <File path="C:\Users\Benjoe\Documents\Omek\GAT\Gesture Packs\itikitik_gestures_new\Sequences\Seq35_2_11\Seq35.seq" />
+        </TestFiles>
+        <OutputFile path="C:\Users\Benjoe\Documents\Omek\GAT\Gesture Packs\itikitik_gestures_new\Build\wrongmovegesture.xml" />
+        <Result avgAccuracy="0.980153" trainAccuracy="0.983264" testAccuracy="0.978264" confusionMatrix="" />
+    </LearningParams>
+    <Gestures framesBefore="0">
+        <Gesture categoryName="wrongmovegesture" gestureName="wrongmovegesture" label="3" />
+        <Gesture categoryName="xnegative" gestureName="xnegative" label="2" />
+        <Gesture categoryName="other" gestureName="other" label="1" />
+    </Gestures>
+    <Model fileName="wrongmovegesture.model" />
+    <Date created="2/13/2014 10:04:00 PM" published="" />
+    <Comment value="" />
+</ClassifierParams>

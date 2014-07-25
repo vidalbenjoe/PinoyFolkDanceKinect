@@ -1,0 +1,29 @@
+<ClassifierParams hidden="false">
+    <GestureDataParams vectorSize="5" voteSize="1" refractoryPeriod="13" isRefractoryPerGroup="true" usePositions="false" usePositionsX="true" usePositionsY="false" usePositionsZ="true" useDeltas="false" useDeltasX="false" useDeltasY="false" useDeltasZ="false" useRelativePositions="false" useRelativePositionsX="false" useRelativePositionsY="false" useRelativePositionsZ="false" useRotation="false" useRotationX="false" useRotationY="true" useRotationZ="false" flipx="false" useHeadConfidence="false" relativeJoint="torso" isRepetitive="true" fps="30">
+        <Joints>
+            <Joint name="head" X="true" Y="true" Z="true" />
+            <Joint name="rightFingerTip" X="true" Y="true" Z="true" />
+            <Joint name="leftFingerTip" X="true" Y="true" Z="true" />
+            <Joint name="hips" X="true" Y="true" Z="true" />
+        </Joints>
+        <Scale normalizeMean="false" normalizeSTD="false" doLocalScale="false" doGlobalScale="false" perCoordScaling="false" useSmooth="false" smoothStrength="0" />
+    </GestureDataParams>
+    <LearningParams useLinear="false" gestureExpand="0" otherOverlap="0.0000" useWeights="true" weightFactor1="1.00" weightFactor2="20" testToleranceRight="2" testToleranceLeft="2" cost="2.00" gamma="-13.00" linearSolver="0" useSynthetic="true">
+        <TrainFiles>
+            <File path="C:\Users\Diaz\Desktop\latest gestures\binasuan\Sequences\Seq9\Seq9.seq" />
+        </TrainFiles>
+        <TestFiles>
+            <File path="C:\Users\Diaz\Desktop\latest gestures\binasuan\Sequences\Seq11\Seq11.seq" />
+        </TestFiles>
+        <OutputFile path="C:\Users\Diaz\Desktop\latest gestures\binasuan\Build\steponetwist.xml" />
+        <Result avgAccuracy="0.980314" trainAccuracy="1" testAccuracy="0.974918" confusionMatrix="" />
+    </LearningParams>
+    <Gestures framesBefore="2">
+        <Gesture categoryName="steponetwist" gestureName="steponetwist" label="3" />
+        <Gesture categoryName="xnegative" gestureName="xnegative" label="2" />
+        <Gesture categoryName="other" gestureName="other" label="1" />
+    </Gestures>
+    <Model fileName="steponetwist.model" />
+    <Date created="1/19/2014 2:30:15 AM" published="" />
+    <Comment value="" />
+</ClassifierParams>

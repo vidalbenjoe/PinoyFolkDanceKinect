@@ -1,0 +1,382 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+	<Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+	<Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+	<ProductVersion>10.0.20506</ProductVersion>
+	<SchemaVersion>2.0</SchemaVersion>
+	<ProjectGuid>{FBA2FA7A-CCDE-9AB4-8160-647141D6C2C2}</ProjectGuid>
+	<OutputType>Library</OutputType>
+	<AppDesignerFolder>Properties</AppDesignerFolder>
+	<RootNamespace></RootNamespace>
+	<AssemblyName>Assembly-CSharp-Editor</AssemblyName>
+	<TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+	<FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+	<DebugSymbols>true</DebugSymbols>
+	<DebugType>full</DebugType>
+	<Optimize>false</Optimize>
+	<OutputPath>Temp\bin\Debug\</OutputPath>
+	<DefineConstants>DEBUG;TRACE;UNITY_STANDALONE_WIN;ENABLE_MICROPHONE;ENABLE_IMAGEEFFECTS;ENABLE_WEBCAM;ENABLE_AUDIO_FMOD;UNITY_STANDALONE;ENABLE_NETWORK;ENABLE_MONO;ENABLE_PHYSICS;ENABLE_TERRAIN;ENABLE_CACHING;ENABLE_SUBSTANCE;ENABLE_GENERICS;ENABLE_CLOTH;ENABLE_MOVIES;ENABLE_AUDIO;ENABLE_WWW;ENABLE_SHADOWS;ENABLE_DUCK_TYPING;UNITY_4_1_2;UNITY_4_1;ENABLE_PROFILER;UNITY_EDITOR;UNITY_TEAM_LICENSE;7</DefineConstants>
+	<ErrorReport>prompt</ErrorReport>
+	<WarningLevel>4</WarningLevel>
+	<NoWarn>0169</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+	<DebugType>pdbonly</DebugType>
+	<Optimize>true</Optimize>
+	<OutputPath>Temp\bin\Release\</OutputPath>
+	<DefineConstants>TRACE</DefineConstants>
+	<ErrorReport>prompt</ErrorReport>
+	<WarningLevel>4</WarningLevel>
+	<NoWarn>0169</NoWarn>
+  </PropertyGroup>
+  <ItemGroup>
+	<Reference Include="System" />
+    <Reference Include="System.XML" />
+	<Reference Include="System.Core" />
+	<Reference Include="UnityEngine">
+	  <HintPath>C:/Program Files (x86)/Unity/Editor/Data/Managed/UnityEngine.dll</HintPath>
+	</Reference>
+	<Reference Include="UnityEditor">
+	  <HintPath>C:/Program Files (x86)/Unity/Editor/Data/Managed/UnityEditor.dll</HintPath>
+	</Reference>
+  </ItemGroup>
+  <ItemGroup>
+     <Compile Include="Assets\Editor\AdjustHeights.cs" />
+     <Compile Include="Assets\Editor\BuildScenes.cs" />
+     <Compile Include="Assets\Editor\CreatePlane.cs" />
+     <Compile Include="Assets\MotionToolkit\Editor\EditorGUIUtils.cs" />
+     <Compile Include="Assets\MotionToolkit\Editor\JointPositionTransformerInspector.cs" />
+     <Compile Include="Assets\MotionToolkit\Editor\OmekAbout.cs" />
+     <Compile Include="Assets\MotionToolkit\Editor\SensorImageConfiguratorInspector.cs" />
+     <Compile Include="Assets\MotionToolkit\Editor\SerializedObjectUtils.cs" />
+     <Compile Include="Assets\MotionToolkit\Editor\SkeletonTrackingAnimationInspector.cs" />
+     <Compile Include="Assets\MotionToolkit\Editor\UIAdditions.cs" />
+     <Compile Include="Assets\MotionToolkit\Editor\UnityBeckonManagerInspector.cs" />
+     <Compile Include="Assets\MotionToolkit\Editor\UnityPlayerManagementInspector.cs" />
+     <Compile Include="Assets\MotionToolkit\Editor\UnityPointerManagerInspector.cs" />
+     <Compile Include="Assets\NGUI\Scripts\Editor\ComponentSelector.cs" />
+     <Compile Include="Assets\NGUI\Scripts\Editor\NGUIMenu.cs" />
+     <Compile Include="Assets\NGUI\Scripts\Editor\NGUISelectionTools.cs" />
+     <Compile Include="Assets\NGUI\Scripts\Editor\NGUITransformInspector.cs" />
+     <Compile Include="Assets\NGUI\Scripts\Editor\UIAtlasInspector.cs" />
+     <Compile Include="Assets\NGUI\Scripts\Editor\UIAtlasMaker.cs" />
+     <Compile Include="Assets\NGUI\Scripts\Editor\UICameraTool.cs" />
+     <Compile Include="Assets\NGUI\Scripts\Editor\UICreateNewUIWizard.cs" />
+     <Compile Include="Assets\NGUI\Scripts\Editor\UICreateWidgetWizard.cs" />
+     <Compile Include="Assets\NGUI\Scripts\Editor\UIDrawCallInspector.cs" />
+     <Compile Include="Assets\NGUI\Scripts\Editor\UIFilledSpriteInspector.cs" />
+     <Compile Include="Assets\NGUI\Scripts\Editor\UIFontInspector.cs" />
+     <Compile Include="Assets\NGUI\Scripts\Editor\UIFontMaker.cs" />
+     <Compile Include="Assets\NGUI\Scripts\Editor\UIImageButtonInspector.cs" />
+     <Compile Include="Assets\NGUI\Scripts\Editor\UILabelInspector.cs" />
+     <Compile Include="Assets\NGUI\Scripts\Editor\UIPanelInspector.cs" />
+     <Compile Include="Assets\NGUI\Scripts\Editor\UIPanelTool.cs" />
+     <Compile Include="Assets\NGUI\Scripts\Editor\UIPopupListInspector.cs" />
+     <Compile Include="Assets\NGUI\Scripts\Editor\UIScrollBarInspector.cs" />
+     <Compile Include="Assets\NGUI\Scripts\Editor\UISettings.cs" />
+     <Compile Include="Assets\NGUI\Scripts\Editor\UISlicedSpriteInspector.cs" />
+     <Compile Include="Assets\NGUI\Scripts\Editor\UISliderInspector.cs" />
+     <Compile Include="Assets\NGUI\Scripts\Editor\UISpriteAnimationInspector.cs" />
+     <Compile Include="Assets\NGUI\Scripts\Editor\UISpriteInspector.cs" />
+     <Compile Include="Assets\NGUI\Scripts\Editor\UITextureInspector.cs" />
+     <Compile Include="Assets\NGUI\Scripts\Editor\UITiledSpriteInspector.cs" />
+     <Compile Include="Assets\NGUI\Scripts\Editor\UIWidgetInspector.cs" />
+     <None Include="Assets\Classifiers\BasicGesturePack\itikitik_fifthstep.xml" />
+     <None Include="Assets\NGUI\Resources\Shaders\Depth.shader" />
+     <None Include="Assets\KinectItikFolder\Script\Image Effects (Pro Only)\_Sources\Shaders\TwirlEffect.shader" />
+     <None Include="Assets\Classifiers\BasicGesturePack\steponebina.xml" />
+     <None Include="Assets\Classifiers\BasicGesturePack\steponetwist.xml" />
+     <None Include="Assets\Standard Assets\Projectors\Guidelines.txt" />
+     <None Include="Assets\MotionToolkit\Resources\Classifiers\BasicGesturePack\subli_fifthstep.xml" />
+     <None Include="Assets\KinectItikFolder\Script\Image Effects (Pro Only)\_Sources\Shaders\_BloomAndFlares\Blend.shader" />
+     <None Include="Assets\MotionToolkit\Resources\Classifiers\BasicGesturePack\subli_seventhstep.xml" />
+     <None Include="Assets\KinectItikFolder\Script\Image Effects (Pro Only)\_Sources\Shaders\_Antialiasing\DLAA.shader" />
+     <None Include="Assets\KinectItikFolder\Script\Image Effects (Pro Only)\_Sources\Shaders\_BloomAndFlares\BrightPassFilter2.shader" />
+     <None Include="Assets\Standard Assets\Projectors\Sources\Shaders\Projector Multiply.shader" />
+     <None Include="Assets\KinectItikFolder\Script\Image Effects (Pro Only)\_Sources\Shaders\BlurEffectConeTaps.shader" />
+     <None Include="Assets\Help.txt" />
+     <None Include="Assets\Classifiers\BasicGesturePack\kuratsa_stepup_mir.xml" />
+     <None Include="Assets\NGUI\Examples\Atlases\Wooden\Arimo20.txt" />
+     <None Include="Assets\NGUI\Examples\Atlases\Wooden\Arimo14.txt" />
+     <None Include="Assets\Classifiers\BasicGesturePack\steptwotwist_mirror.xml" />
+     <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\GlowConeTap.shader" />
+     <None Include="Assets\Classifiers\BasicGesturePack\steponebinamirror.xml" />
+     <None Include="Assets\MotionToolkit\Resources\Classifiers\BasicGesturePack\subli_ninthstep.xml" />
+     <None Include="Assets\Classifiers\BasicGesturePack\steponeraisebina.xml" />
+     <None Include="Assets\KinectItikFolder\Script\Image Effects (Pro Only)\_Sources\Shaders\NoiseAndGrain.shader" />
+     <None Include="Assets\KinectItikFolder\Script\Image Effects (Pro Only)\_Sources\Shaders\FisheyeShader.shader" />
+     <None Include="Assets\MotionToolkit\Resources\Classifiers\BasicGesturePack\itikitik_fifthstep.xml" />
+     <None Include="Assets\KinectItikFolder\Script\Image Effects (Pro Only)\_Sources\Shaders\_BloomAndFlares\BlendForBloom.shader" />
+     <None Include="Assets\KinectItikFolder\3dModel\HOMEkinect\3e55944be70bd291c9e6c3e9084ff1c4\archibase.net.txt" />
+     <None Include="Assets\KinectItikFolder\Script\Image Effects (Pro Only)\_Sources\Shaders\SSAOShader.shader" />
+     <None Include="Assets\Classifiers\BasicGesturePack\stepten.xml" />
+     <None Include="Assets\Plugins\LeanTween-ReadMe.txt" />
+     <None Include="Assets\Classifiers\BasicGesturePack\stepone.xml" />
+     <None Include="Assets\KinectItikFolder\Script\Image Effects (Pro Only)\_Sources\Shaders\_DepthOfField\SeparableWeightedBlurDof34.shader" />
+     <None Include="Assets\KinectItikFolder\Script\Image Effects (Pro Only)\_Sources\Shaders\MotionBlurClear.shader" />
+     <None Include="Assets\KinectItikFolder\Script\Image Effects (Pro Only)\_Sources\Shaders\ConvertDepth.shader" />
+     <None Include="Assets\KinectItikFolder\Script\Image Effects (Pro Only)\_Sources\Shaders\_BloomAndFlares\BlendOneOne.shader" />
+     <None Include="Assets\Standard Assets\Blob-Shadow\ShadowProjection.shader" />
+     <None Include="Assets\KinectItikFolder\Script\Image Effects (Pro Only)\_Sources\Shaders\_Antialiasing\NFAA.shader" />
+     <None Include="Assets\Classifiers\BasicGesturePack\stepthreetwist.xml" />
+     <None Include="Assets\KinectItikFolder\3dModel\FBX\Kuratsa3D\389e90bc78bc0f5f6814107e199f1a67\archibase.net.txt" />
+     <None Include="Assets\NGUI\Resources\Shaders\Unlit - Masked Colored.shader" />
+     <None Include="Assets\Classifiers\BasicGesturePack\itikitik_thirdstep.xml" />
+     <None Include="Assets\Classifiers\BasicGesturePack\steptwo.xml" />
+     <None Include="Assets\KinectItikFolder\Script\Image Effects (Pro Only)\_Sources\Shaders\CameraMotionBlurDX11.shader" />
+     <None Include="Assets\NGUI\Examples\Atlases\Wooden\Arimo18.txt" />
+     <None Include="Assets\Classifiers\BasicGesturePack\steptwotwist.xml" />
+     <None Include="Assets\Classifiers\BasicGesturePack\stepfourtwistbina.xml" />
+     <None Include="Assets\KinectItikFolder\Script\Image Effects (Pro Only)\_Sources\Shaders\ShowAlphaChannel.shader" />
+     <None Include="Assets\MotionToolkit\Resources\Classifiers\BasicGesturePack\itikitik_fourthstep.xml" />
+     <None Include="Assets\Classifiers\BasicGesturePack\stepone_mirror.xml" />
+     <None Include="Assets\Classifiers\BasicGesturePack\lefthand.xml" />
+     <None Include="Assets\Standard Assets\Particles\Sources\Shaders\Particle Alpha Blend (Queue +100).shader" />
+     <None Include="Assets\KinectItikFolder\3dModel\FBX\Kuratsa3D\19fe37e01cb3bd1d4e57b62f5f8e5e5e\archibase.net.txt" />
+     <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\GlowCompose.shader" />
+     <None Include="Assets\KinectItikFolder\Script\Image Effects (Pro Only)\_Sources\Shaders\Tonemapper.shader" />
+     <None Include="Assets\KinectItikFolder\Script\Image Effects (Pro Only)\_Sources\Shaders\_Antialiasing\FXAAPreset3.shader" />
+     <None Include="Assets\MotionToolkit\Resources\Classifiers\BasicGesturePack\subli_eighthstep.xml" />
+     <None Include="Assets\Classifiers\BasicGesturePack\itikitik_seventhstep.xml" />
+     <None Include="Assets\KinectItikFolder\3dModel\FBX\Kuratsa3D\bcc797dacc0ce015f79c9259abb50355\archibase.net.txt" />
+     <None Include="Assets\MotionToolkit\Resources\Classifiers\BasicGesturePack\subli_fourthstep.xml" />
+     <None Include="Assets\NGUI\Examples\Atlases\SciFi\SciFi Font - Header.txt" />
+     <None Include="Assets\KinectItikFolder\Script\Image Effects (Pro Only)\_Sources\Shaders\_BloomAndFlares\LensFlareCreate.shader" />
+     <None Include="Assets\KinectItikFolder\Script\Image Effects (Pro Only)\_Sources\Shaders\NoiseEffectShaderRGB.shader" />
+     <None Include="Assets\Classifiers\BasicGesturePack\stepfourtwist.xml" />
+     <None Include="Assets\KinectItikFolder\3dModel\FBX\Kuratsa3D\804ba7420be8c23e33986397b60ede0a\archibase.net.txt" />
+     <None Include="Assets\KinectItikFolder\3dModel\FBX\Kuratsa3D\8e41b7a1d0376ad5fb160b017a6cc52a\archibase.net.txt" />
+     <None Include="Assets\KinectItikFolder\Script\Image Effects (Pro Only)\_Sources\Shaders\_DepthOfField\SeparableBlur.shader" />
+     <None Include="Assets\Classifiers\BasicGesturePack\stepfivetwistbina.xml" />
+     <None Include="Assets\MotionToolkit\Resources\Classifiers\BasicGesturePack\subli_eleventhstep.xml" />
+     <None Include="Assets\KinectItikFolder\3dModel\HOMEkinect\55951a0a699167ee7eeae161246ea386\archibase.net.txt" />
+     <None Include="Assets\MotionToolkit\Resources\Classifiers\BasicGesturePack\subli_twelfthstep.xml" />
+     <None Include="Assets\Plugins\BeckonDotNetWrapper.xml" />
+     <None Include="Assets\Classifiers\BasicGesturePack\stepsixturn.xml" />
+     <None Include="Assets\Classifiers\BasicGesturePack\stepthree.xml" />
+     <None Include="Assets\Standard Assets\Skyboxes\_skybox info.txt" />
+     <None Include="Assets\Classifiers\BasicGesturePack\subli_fifthstep_mir.xml" />
+     <None Include="Assets\KinectItikFolder\3dModel\StageLight\lIGHTING\archibase.net.txt" />
+     <None Include="Assets\KinectItikFolder\Script\Image Effects (Pro Only)\_Sources\Shaders\GlowConeTap.shader" />
+     <None Include="Assets\KinectItikFolder\3dModel\FBX\Kuratsa3D\36bf5ff7e57f3b6e2b665b1525ffdbd1\archibase.net.txt" />
+     <None Include="Assets\Classifiers\BasicGesturePack\kuratsa_fourthstep.xml" />
+     <None Include="Assets\MotionToolkit\Plugins\BeckonDotNetFramework.xml" />
+     <None Include="Assets\Classifiers\BasicGesturePack\rightclick.xml" />
+     <None Include="Assets\NGUI\Resources\Shaders\Unlit - Transparent Colored (AlphaClip).shader" />
+     <None Include="Assets\Plugins\BeckonDotNetFramework.xml" />
+     <None Include="Assets\Classifiers\BasicGesturePack\kuratsa_thirdstep.xml" />
+     <None Include="Assets\KinectItikFolder\Script\Image Effects (Pro Only)\_Sources\Shaders\GrayscaleEffect.shader" />
+     <None Include="Assets\NGUI\Examples\Atlases\Fantasy\Fantasy Font - Normal.txt" />
+     <None Include="Assets\KinectItikFolder\Script\Image Effects (Pro Only)\_Sources\Shaders\_BloomAndFlares\SeparableBlurPlus.shader" />
+     <None Include="Assets\KinectItikFolder\3dModel\FBX\Kuratsa3D\ac6e772954bbc0a200b2273f6f7cc830 (1)\archibase.net.txt" />
+     <None Include="Assets\MotionToolkit\Resources\Classifiers\BasicGesturePack\subli_sixteenthstep.xml" />
+     <None Include="Assets\KinectItikFolder\3dModel\FBX\20d4310bd9c7d9d5d7c807e83e78f9e0\archibase.net.txt" />
+     <None Include="Assets\KinectItikFolder\3dModel\StageLight\96cb887348163a65ba08a868ced6c560\archibase.net.txt" />
+     <None Include="Assets\NGUI\Examples\Atlases\Refractive\Refractive Font - Normal.txt" />
+     <None Include="Assets\Classifiers\BasicGesturePack\steptwotwistbinamirror.xml" />
+     <None Include="Assets\KinectItikFolder\Script\Image Effects (Pro Only)\_Sources\Shaders\GlowEffectDownsample.shader" />
+     <None Include="Assets\Classifiers\BasicGesturePack\stepfiveraise.xml" />
+     <None Include="Assets\KinectItikFolder\Script\Image Effects (Pro Only)\_Sources\Shaders\MotionBlur.shader" />
+     <None Include="Assets\Classifiers\BasicGesturePack\subli_fourthstep_mir.xml" />
+     <None Include="Assets\Plugins\CommonFrameworkForBeckon.xml" />
+     <None Include="Assets\MotionToolkit\Resources\Classifiers\BasicGesturePack\subli_ninteenthstep.xml" />
+     <None Include="Assets\KinectItikFolder\Script\Image Effects (Pro Only)\_Sources\Shaders\EdgeDetectNormals.shader" />
+     <None Include="Assets\Classifiers\BasicGesturePack\itikitik_slideleft.xml" />
+     <None Include="Assets\Classifiers\BasicGesturePack\stepfourbina.xml" />
+     <None Include="Assets\Classifiers\BasicGesturePack\stepfivetwist_mirror.xml" />
+     <None Include="Assets\KinectItikFolder\3dModel\FBX\Kuratsa3D\3bd7a495dd1774bb2fdaa2edf54a7be4\archibase.net.txt" />
+     <None Include="Assets\KinectItikFolder\Script\Image Effects (Pro Only)\_Sources\Shaders\ColorCorrectionEffect.shader" />
+     <None Include="Assets\KinectItikFolder\3dModel\FBX\41ac45a20ed44e177a28d0aaf8633fbb\archibase.net.txt" />
+     <None Include="Assets\KinectItikFolder\Script\Image Effects (Pro Only)\_Sources\Shaders\SimpleClear.shader" />
+     <None Include="Assets\Classifiers\BasicGesturePack\righthand.xml" />
+     <None Include="Assets\MotionToolkit\Resources\Classifiers\BasicGesturePack\subli_twentiethstep.xml" />
+     <None Include="Assets\Classifiers\BasicGesturePack\stepfive.xml" />
+     <None Include="Assets\Standard Assets\Projectors\Sources\Shaders\Projector Light.shader" />
+     <None Include="Assets\KinectItikFolder\Script\Image Effects (Pro Only)\_Sources\Shaders\_BloomAndFlares\BrightPassFilter.shader" />
+     <None Include="Assets\MotionToolkit\Resources\Classifiers\BasicGesturePack\subli_eighteenthstep.xml" />
+     <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\GlowEffectDownsample.shader" />
+     <None Include="Assets\KinectItikFolder\3dModel\HOMEkinect\bf627b5af4d1a5eb542707f7841b808b\archibase.net.txt" />
+     <None Include="Assets\Standard Assets\Water (Basic)\Sources\Shaders\FX-Water Simple.shader" />
+     <None Include="Assets\KinectItikFolder\Script\Image Effects (Pro Only)\_Sources\Shaders\EdgeDetectX.shader" />
+     <None Include="Assets\KinectItikFolder\Script\Image Effects (Pro Only)\_Sources\Shaders\Contrast Stretch\Adaptation.shader" />
+     <None Include="Assets\KinectItikFolder\Script\Image Effects (Pro Only)\_Sources\Shaders\_DepthOfField\Bokeh34.shader" />
+     <None Include="Assets\KinectItikFolder\Script\Image Effects (Pro Only)\_Sources\Shaders\_DepthOfField\DepthOfFieldDX11.shader" />
+     <None Include="Assets\MotionToolkit\Resources\Classifiers\BasicGesturePack\subli_secondstep.xml" />
+     <None Include="Assets\KinectItikFolder\Script\Image Effects (Pro Only)\_Sources\Shaders\ContrastComposite.shader" />
+     <None Include="Assets\Classifiers\BasicGesturePack\stepfourraise.xml" />
+     <None Include="Assets\MotionToolkit\Resources\Classifiers\BasicGesturePack\itikitik_sixthstep.xml" />
+     <None Include="Assets\MotionToolkit\Resources\Classifiers\BasicGesturePack\itikitik_firststep.xml" />
+     <None Include="Assets\KinectItikFolder\Script\Image Effects (Pro Only)\_Sources\Shaders\_DepthOfField\DepthOfField34.shader" />
+     <None Include="Assets\Classifiers\BasicGesturePack\leftclick.xml" />
+     <None Include="Assets\Classifiers\BasicGesturePack\wrongmovegesture.xml" />
+     <None Include="Assets\Classifiers\BasicGesturePack\stepeight.xml" />
+     <None Include="Assets\MotionToolkit\Resources\Classifiers\BasicGesturePack\rightswiperight.xml" />
+     <None Include="Assets\Classifiers\BasicGesturePack\steponetwist_mirror.xml" />
+     <None Include="Assets\Classifiers\BasicGesturePack\steptenbina.xml" />
+     <None Include="Assets\KinectItikFolder\Script\Image Effects (Pro Only)\_Sources\Shaders\_DepthOfField\TiltShift.shader" />
+     <None Include="Assets\Classifiers\BasicGesturePack\subli_fourthstep.xml" />
+     <None Include="Assets\Classifiers\BasicGesturePack\itikitik_fifthstep_mir.xml" />
+     <None Include="Assets\KinectItikFolder\Script\Image Effects (Pro Only)\_Sources\Shaders\ColorCorrectionSelective.shader" />
+     <None Include="Assets\NGUI\ReadMe.txt" />
+     <None Include="Assets\NGUI\Resources\Shaders\Unlit - Transparent Colored.shader" />
+     <None Include="Assets\NGUI\Resources\Shaders\Unlit - Transparent Colored (HardClip).shader" />
+     <None Include="Assets\KinectItikFolder\Script\Image Effects (Pro Only)\_Sources\Shaders\_Antialiasing\FXAA2.shader" />
+     <None Include="Assets\MotionToolkit\Plugins\BeckonDotNet.xml" />
+     <None Include="Assets\NGUI\Resources\Shaders\Unlit - Transparent Colored Overlay.shader" />
+     <None Include="Assets\KinectItikFolder\Script\Image Effects (Pro Only)\_Sources\Shaders\Contrast Stretch\Luminance.shader" />
+     <None Include="Assets\KinectItikFolder\Script\Image Effects (Pro Only)\_Sources\Shaders\Contrast Stretch\MinMaxReduction.shader" />
+     <None Include="Assets\Classifiers\BasicGesturePack\kuratsa_firststep.xml" />
+     <None Include="Assets\Classifiers\BasicGesturePack\steptwobina.xml" />
+     <None Include="Assets\KinectItikFolder\Script\Image Effects (Pro Only)\_Sources\Shaders\NoiseEffectShaderYUV.shader" />
+     <None Include="Assets\MotionToolkit\Resources\Classifiers\BasicGesturePack\subli_seventeenthstep.xml" />
+     <None Include="Assets\Classifiers\BasicGesturePack\leftswipeleft.xml" />
+     <None Include="Assets\KinectItikFolder\Script\Image Effects (Pro Only)\_Sources\Shaders\NoiseAndGrainDX11.shader" />
+     <None Include="Assets\KinectItikFolder\Script\Image Effects (Pro Only)\_Sources\Shaders\VignettingShader.shader" />
+     <None Include="Assets\KinectItikFolder\Script\Image Effects (Pro Only)\_Sources\Shaders\_Antialiasing\SSAA.shader" />
+     <None Include="Assets\KinectItikFolder\Script\Image Effects (Pro Only)\_Sources\Shaders\VortexEffect.shader" />
+     <None Include="Assets\Classifiers\BasicGesturePack\steponeraise.xml" />
+     <None Include="Assets\KinectItikFolder\3dModel\FBX\358ad3d66c1f750cafa0507966b45ec2\archibase.net.txt" />
+     <None Include="Assets\KinectItikFolder\Script\Image Effects (Pro Only)\_Sources\Shaders\_BloomAndFlares\MultiPassHollywoodFlares.shader" />
+     <None Include="Assets\MotionToolkit\Resources\Classifiers\BasicGesturePack\leftswipeleft.xml" />
+     <None Include="Assets\NGUI\Examples\Other\English.txt" />
+     <None Include="Assets\MotionToolkit\Resources\Classifiers\BasicGesturePack\rightclick.xml" />
+     <None Include="Assets\KinectItikFolder\Script\Image Effects (Pro Only)\_Sources\Shaders\ColorCorrectionCurvesSimple.shader" />
+     <None Include="Assets\MotionToolkit\Resources\Classifiers\BasicGesturePack\itikitik_thirdstep.xml" />
+     <None Include="Assets\KinectItikFolder\Script\Image Effects (Pro Only)\_Sources\Shaders\SunShaftsComposite.shader" />
+     <None Include="Assets\Classifiers\BasicGesturePack\itikitik_secondstep.xml" />
+     <None Include="Assets\Classifiers\BasicGesturePack\subli_thirdstep.xml" />
+     <None Include="Assets\Classifiers\BasicGesturePack\stepfivetwist.xml" />
+     <None Include="Assets\Classifiers\BasicGesturePack\steponetwistbinamirror.xml" />
+     <None Include="Assets\KinectItikFolder\Script\Image Effects (Pro Only)\_Sources\Shaders\RadialBlur.shader" />
+     <None Include="Assets\NGUI\Resources\Shaders\Unlit - Transparent Colored (Packed).shader" />
+     <None Include="Assets\KinectItikFolder\Script\Image Effects (Pro Only)\_Sources\Shaders\GlowCompose.shader" />
+     <None Include="Assets\KinectItikFolder\Script\Image Effects (Pro Only)\_Sources\Shaders\ColorCorrectionCurves.shader" />
+     <None Include="Assets\MotionToolkit\Plugins\CommonFrameworkForBeckon.xml" />
+     <None Include="Assets\Classifiers\BasicGesturePack\kuratsa_stepup.xml" />
+     <None Include="Assets\Classifiers\BasicGesturePack\stepfivebina.xml" />
+     <None Include="Assets\Classifiers\BasicGesturePack\steponetwistbina.xml" />
+     <None Include="Assets\KinectItikFolder\Script\Image Effects (Pro Only)\_Sources\Shaders\PrepareSunShaftsBlur.shader" />
+     <None Include="Assets\Kinect\Documents\README.txt" />
+     <None Include="Assets\Classifiers\BasicGesturePack\stepnine.xml" />
+     <None Include="Assets\Classifiers\BasicGesturePack\itikitik_fourthstep.xml" />
+     <None Include="Assets\Classifiers\BasicGesturePack\stepsevenbina.xml" />
+     <None Include="Assets\KinectItikFolder\Script\Image Effects (Pro Only)\_Sources\Shaders\SepiaToneEffect.shader" />
+     <None Include="Assets\KinectItikFolder\Script\Image Effects (Pro Only)\_Sources\Shaders\_BloomAndFlares\BlurAndFlares.shader" />
+     <None Include="Assets\KinectItikFolder\3dModel\HOMEkinect\deeb4559c62590d76404ee1bfc4e3132\archibase.net.txt" />
+     <None Include="Assets\Classifiers\BasicGesturePack\itikitik_sixthstep.xml" />
+     <None Include="Assets\KinectItikFolder\3dModel\HOMEkinect\78ec5246d33a9836afbb372d8721ac29\archibase.net.txt" />
+     <None Include="Assets\Classifiers\BasicGesturePack\stepthreeraise.xml" />
+     <None Include="Assets\MotionToolkit\Resources\Classifiers\BasicGesturePack\itikitik_seventhstep.xml" />
+     <None Include="Assets\Classifiers\BasicGesturePack\stepfourtwistbinamirror.xml" />
+     <None Include="Assets\Classifiers\BasicGesturePack\stepfourtwist_mirror.xml" />
+     <None Include="Assets\Classifiers\BasicGesturePack\subli_seventhstep.xml" />
+     <None Include="Assets\KinectItikFolder\Script\Image Effects (Pro Only)\_Sources\Shaders\ColorCorrection3DLut.shader" />
+     <None Include="Assets\Classifiers\BasicGesturePack\steptwotwistbina.xml" />
+     <None Include="Assets\Classifiers\BasicGesturePack\stepfivetwistbinamirror.xml" />
+     <None Include="Assets\Classifiers\BasicGesturePack\stepfour.xml" />
+     <None Include="Assets\KinectItikFolder\Script\Image Effects (Pro Only)\_Sources\Shaders\CreaseApply.shader" />
+     <None Include="Assets\MotionToolkit\Resources\Classifiers\BasicGesturePack\sublil_sixthstep.xml" />
+     <None Include="Assets\Classifiers\BasicGesturePack\stepthreetwistbinamirror.xml" />
+     <None Include="Assets\Classifiers\BasicGesturePack\stepeightbina.xml" />
+     <None Include="Assets\Classifiers\BasicGesturePack\subli_sixthstep.xml" />
+     <None Include="Assets\Classifiers\BasicGesturePack\rightswiperight.xml" />
+     <None Include="Assets\NGUI\Resources\Shaders\Unlit - Additive Colored.shader" />
+     <None Include="Assets\Classifiers\BasicGesturePack\kuratsa_handwave.xml" />
+     <None Include="Assets\MotionToolkit\Resources\Classifiers\BasicGesturePack\subli_thirdstep.xml" />
+     <None Include="Assets\Kinect\Documents\BSD.txt" />
+     <None Include="Assets\KinectItikFolder\Script\Image Effects (Pro Only)\_Sources\Shaders\frag_ao.cginc" />
+     <None Include="Assets\NGUI\Examples\Atlases\Refractive\Refractive Font - Header.txt" />
+     <None Include="Assets\Plugins\BeckonDotNet.xml" />
+     <None Include="Assets\NGUI\Examples\Shaders\Refractive.shader" />
+     <None Include="Assets\KinectItikFolder\3dModel\FBX\Kuratsa3D\7255c1b7081357cc1d403f76c87431e6\archibase.net.txt" />
+     <None Include="Assets\Classifiers\BasicGesturePack\subli_secondstep.xml" />
+     <None Include="Assets\Classifiers\BasicGesturePack\steptworaise.xml" />
+     <None Include="Assets\KinectItikFolder\3dModel\HOMEkinect\493154df7faf5a0df7acdc3b1aeb195e\archibase.net.txt" />
+     <None Include="Assets\Classifiers\BasicGesturePack\subli_firststep.xml" />
+     <None Include="Assets\Classifiers\BasicGesturePack\stepthreetwist_mirror.xml" />
+     <None Include="Assets\MotionToolkit\Resources\Classifiers\BasicGesturePack\leftclick.xml" />
+     <None Include="Assets\Classifiers\BasicGesturePack\stepthreetwistbina.xml" />
+     <None Include="Assets\KinectItikFolder\Script\Image Effects (Pro Only)\_Sources\Shaders\_BloomAndFlares\VignetteShader.shader" />
+     <None Include="Assets\KinectItikFolder\Script\Image Effects (Pro Only)\_Sources\Shaders\ChromaticAberrationShader.shader" />
+     <None Include="Assets\Classifiers\BasicGesturePack\itikitik_slideright.xml" />
+     <None Include="Assets\KinectItikFolder\3dModel\HOMEkinect\d457494ca55a735048f99321256f04ea\archibase.net.txt" />
+     <None Include="Assets\MotionToolkit\Prefabs\Images\Shaders\PlayerMaskShaderPlusGlowForPlanes.shader" />
+     <None Include="Assets\NGUI\Examples\Atlases\SciFi\SciFi Font - Normal.txt" />
+     <None Include="Assets\Classifiers\BasicGesturePack\kuratsa_getupleft_mir.xml" />
+     <None Include="Assets\Classifiers\BasicGesturePack\subli_sixthstep_mir.xml" />
+     <None Include="Assets\MotionToolkit\Resources\Classifiers\BasicGesturePack\subli_firststep.xml" />
+     <None Include="Assets\KinectItikFolder\Script\Image Effects (Pro Only)\_Sources\Shaders\GlobalFog.shader" />
+     <None Include="Assets\KinectItikFolder\3dModel\FBX\speaker2\archibase.net.txt" />
+     <None Include="Assets\KinectItikFolder\3dModel\FBX\speaker\archibase.net.txt" />
+     <None Include="Assets\KinectItikFolder\Script\Image Effects (Pro Only)\_Sources\Shaders\CameraMotionBlur.shader" />
+     <None Include="Assets\Classifiers\BasicGesturePack\stepthreebina.xml" />
+     <None Include="Assets\KinectItikFolder\Script\Image Effects (Pro Only)\_Sources\Shaders\_DepthOfField\DepthOfFieldScatter.shader" />
+     <None Include="Assets\NGUI\Resources\Shaders\Unlit - Transparent Colored (SoftClip).shader" />
+     <None Include="Assets\Classifiers\BasicGesturePack\itikitik_firststep.xml" />
+     <None Include="Assets\KinectItikFolder\3dModel\FBX\ce3d73dd8ce8974a55ffab1d7c7c19c8\archibase.net.txt" />
+     <None Include="Assets\KinectItikFolder\Script\Image Effects (Pro Only)\_Sources\Shaders\BlendModesOverlay.shader" />
+     <None Include="Assets\Classifiers\BasicGesturePack\stepseven.xml" />
+     <None Include="Assets\KinectItikFolder\Script\Image Effects (Pro Only)\_Sources\Shaders\_Antialiasing\FXAA3Console.shader" />
+     <None Include="Assets\Classifiers\BasicGesturePack\stepninebina.xml" />
+     <None Include="Assets\MotionToolkit\Plugins\BeckonDotNetWrapper.xml" />
+     <None Include="Assets\Classifiers\BasicGesturePack\subli_seventhstep_mir.xml" />
+     <None Include="Assets\Classifiers\BasicGesturePack\subli_fifthstep.xml" />
+     <None Include="Assets\KinectItikFolder\Script\Image Effects (Pro Only)\_Sources\Shaders\_Antialiasing\FXAAPreset2.shader" />
+     <None Include="Assets\Classifiers\BasicGesturePack\kuratsa_getupleft.xml" />
+     <None Include="Assets\MotionToolkit\Resources\Classifiers\BasicGesturePack\itikitik_secondstep.xml" />
+     <None Include="Assets\MotionToolkit\Prefabs\Images\Shaders\PlayerMaskShaderGlowForPlanes.shader" />
+     <None Include="Assets\KinectItikFolder\Script\Image Effects (Pro Only)\_Sources\Shaders\Contrast Stretch\Apply.shader" />
+     <None Include="Assets\MotionToolkit\Resources\Classifiers\BasicGesturePack\subli_fifteenthstep.xml" />
+ <Reference Include="Assembly-UnityScript-firstpass">
+ <HintPath>Library\ScriptAssemblies\Assembly-UnityScript-firstpass.dll</HintPath>
+ </Reference>
+ <Reference Include="Assembly-Boo">
+ <HintPath>Library\ScriptAssemblies\Assembly-Boo.dll</HintPath>
+ </Reference>
+ <Reference Include="Assembly-UnityScript">
+ <HintPath>Library\ScriptAssemblies\Assembly-UnityScript.dll</HintPath>
+ </Reference>
+ <Reference Include="BeckonDotNet">
+ <HintPath>Assets\Plugins\BeckonDotNet.dll</HintPath>
+ </Reference>
+ <Reference Include="BeckonDotNetFramework">
+ <HintPath>Assets\Plugins\BeckonDotNetFramework.dll</HintPath>
+ </Reference>
+ <Reference Include="BeckonDotNetWrapper">
+ <HintPath>Assets\Plugins\BeckonDotNetWrapper.dll</HintPath>
+ </Reference>
+ <Reference Include="CommonFrameworkForBeckon">
+ <HintPath>Assets\Plugins\CommonFrameworkForBeckon.dll</HintPath>
+ </Reference>
+ <Reference Include="log4net">
+ <HintPath>Assets\Plugins\log4net.dll</HintPath>
+ </Reference>
+ <Reference Include="NGUI">
+ <HintPath>Assets\NGUI\DLLs\NGUI.dll</HintPath>
+ </Reference>
+ <Reference Include="NGUI_Editor">
+ <HintPath>Assets\NGUI\DLLs\Editor\NGUI_Editor.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEditor.Graphs">
+ <HintPath>C:\Program Files (x86)\Unity\Editor\Data\Managed\UnityEditor.Graphs.dll</HintPath>
+ </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="Assembly-CSharp-firstpass-vs.csproj">
+      <Project>{AA0EFFD9-DA4C-41A6-AFA4-CDD6B9A721E0}</Project>      <Name>Assembly-CSharp-firstpass-vs</Name>    </ProjectReference>
+    <ProjectReference Include="Assembly-CSharp-vs.csproj">
+      <Project>{D0CF90A2-3F6D-D117-75AC-2898D5D47690}</Project>      <Name>Assembly-CSharp-vs</Name>    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+	   Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  
+</Project>

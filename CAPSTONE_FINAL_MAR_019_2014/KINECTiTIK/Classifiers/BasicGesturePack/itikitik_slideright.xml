@@ -1,0 +1,37 @@
+<ClassifierParams hidden="false">
+    <GestureDataParams vectorSize="5" voteSize="4" refractoryPeriod="14" isRefractoryPerGroup="true" usePositions="false" usePositionsX="false" usePositionsY="false" usePositionsZ="false" useDeltas="false" useDeltasX="false" useDeltasY="false" useDeltasZ="false" useRelativePositions="true" useRelativePositionsX="true" useRelativePositionsY="true" useRelativePositionsZ="true" useRotation="false" useRotationX="false" useRotationY="false" useRotationZ="false" flipx="false" useHeadConfidence="false" relativeJoint="torso" isRepetitive="true" fps="30">
+        <Joints>
+            <Joint name="head" X="true" Y="true" Z="true" />
+            <Joint name="rightFingerTip" X="true" Y="true" Z="true" />
+            <Joint name="leftFingerTip" X="true" Y="true" Z="true" />
+            <Joint name="hips" X="true" Y="true" Z="true" />
+        </Joints>
+        <Scale normalizeMean="true" normalizeSTD="false" doLocalScale="true" doGlobalScale="false" perCoordScaling="false" useSmooth="false" smoothStrength="0" />
+    </GestureDataParams>
+    <LearningParams useLinear="false" gestureExpand="0" otherOverlap="0.0000" useWeights="true" weightFactor1="1.00" weightFactor2="25" testToleranceRight="2" testToleranceLeft="2" cost="2.00" gamma="-14.00" linearSolver="0" useSynthetic="false">
+        <TrainFiles>
+            <File path="C:\Users\Benjoe\Documents\Omek\GAT\Gesture Packs\itikitik_gestures_new\Sequences\Seq28_7\Seq28.seq" />
+            <File path="C:\Users\Benjoe\Documents\Omek\GAT\Gesture Packs\itikitik_gestures_new\Sequences\Seq28_2\Seq28.seq" />
+            <File path="C:\Users\Benjoe\Documents\Omek\GAT\Gesture Packs\itikitik_gestures_new\Sequences\Seq28_5\Seq28.seq" />
+        </TrainFiles>
+        <TestFiles>
+            <File path="C:\Users\Benjoe\Documents\Omek\GAT\Gesture Packs\itikitik_gestures_new\Sequences\Seq28_6\Seq28.seq" />
+            <File path="C:\Users\Benjoe\Documents\Omek\GAT\Gesture Packs\itikitik_gestures_new\Sequences\Seq28_3\Seq28.seq" />
+            <File path="C:\Users\Benjoe\Documents\Omek\GAT\Gesture Packs\itikitik_gestures_new\Sequences\Seq28_4\Seq28.seq" />
+            <File path="C:\Users\Benjoe\Documents\Omek\GAT\Gesture Packs\itikitik_gestures_new\Sequences\Seq28\Seq28.seq" />
+            <File path="C:\Users\Benjoe\Documents\Omek\GAT\Gesture Packs\itikitik_gestures_new\Sequences\Seq28_10\Seq28.seq" />
+            <File path="C:\Users\Benjoe\Documents\Omek\GAT\Gesture Packs\itikitik_gestures_new\Sequences\Seq28_8\Seq28.seq" />
+            <File path="C:\Users\Benjoe\Documents\Omek\GAT\Gesture Packs\itikitik_gestures_new\Sequences\Seq28_9\Seq28.seq" />
+        </TestFiles>
+        <OutputFile path="C:\Users\Benjoe\Documents\Omek\GAT\Gesture Packs\itikitik_gestures_new\Build\itikitik_slideright.xml" />
+        <Result avgAccuracy="0.979739" trainAccuracy="0.982406" testAccuracy="0.977739" confusionMatrix="" />
+    </LearningParams>
+    <Gestures framesBefore="2">
+        <Gesture categoryName="itikitik_slideright" gestureName="itikitik_slideright" label="3" />
+        <Gesture categoryName="xnegative" gestureName="xnegative" label="2" />
+        <Gesture categoryName="other" gestureName="other" label="1" />
+    </Gestures>
+    <Model fileName="itikitik_slideright.model" />
+    <Date created="1/19/2014 4:16:45 PM" published="" />
+    <Comment value="" />
+</ClassifierParams>

@@ -1,0 +1,55 @@
+<ClassifierParams hidden="false">
+    <GestureDataParams vectorSize="5" voteSize="1" refractoryPeriod="1" isRefractoryPerGroup="true" usePositions="false" usePositionsX="false" usePositionsY="false" usePositionsZ="false" useDeltas="false" useDeltasX="false" useDeltasY="false" useDeltasZ="false" useRelativePositions="true" useRelativePositionsX="true" useRelativePositionsY="true" useRelativePositionsZ="true" useRotation="false" useRotationX="false" useRotationY="false" useRotationZ="false" flipx="false" useHeadConfidence="false" relativeJoint="torso" isRepetitive="true" fps="30">
+        <Joints>
+            <Joint name="head" X="true" Y="true" Z="true" />
+            <Joint name="rightFingerTip" X="true" Y="true" Z="true" />
+            <Joint name="leftFingerTip" X="true" Y="true" Z="true" />
+            <Joint name="hips" X="true" Y="true" Z="true" />
+        </Joints>
+        <Scale normalizeMean="true" normalizeSTD="false" doLocalScale="true" doGlobalScale="false" perCoordScaling="false" useSmooth="false" smoothStrength="0" />
+    </GestureDataParams>
+    <LearningParams useLinear="false" gestureExpand="0" otherOverlap="0.0000" useWeights="true" weightFactor1="0.55" weightFactor2="5" testToleranceRight="2" testToleranceLeft="2" cost="3.00" gamma="-14.00" linearSolver="0" useSynthetic="false">
+        <TrainFiles>
+            <File path="C:\Users\Benjoe\Documents\Omek\GAT\Gesture Packs\ITIKITIK_GESTURES\Sequences\Sequences_2_2_2_2_2\Seq5\Seq5.seq" />
+            <File path="C:\Users\Benjoe\Documents\Omek\GAT\Gesture Packs\ITIKITIK_GESTURES\Sequences\Sequences_2_2_2_2_2_2\Seq5\Seq5.seq" />
+            <File path="C:\Users\Benjoe\Documents\Omek\GAT\Gesture Packs\ITIKITIK_GESTURES\Sequences\Sequences_2_2\Seq5\Seq5.seq" />
+            <File path="C:\Users\Benjoe\Documents\Omek\GAT\Gesture Packs\ITIKITIK_GESTURES\Sequences\Seq19\Seq19.seq" />
+            <File path="C:\Users\Benjoe\Documents\Omek\GAT\Gesture Packs\ITIKITIK_GESTURES\Sequences\Sequence_3_2_2_2_2_2_2_2\Seq19\Seq19.seq" />
+            <File path="C:\Users\Benjoe\Documents\Omek\GAT\Gesture Packs\ITIKITIK_GESTURES\Sequences\Sequence_3\Seq19\Seq19.seq" />
+            <File path="C:\Users\Benjoe\Documents\Omek\GAT\Gesture Packs\ITIKITIK_GESTURES\Sequences\Sequence_3_2_2_2_2_2_2_2_2\Seq19\Seq19.seq" />
+        </TrainFiles>
+        <TestFiles>
+            <File path="C:\Users\Benjoe\Documents\Omek\GAT\Gesture Packs\ITIKITIK_GESTURES\Sequences\Seq5\Seq5.seq" />
+            <File path="C:\Users\Benjoe\Documents\Omek\GAT\Gesture Packs\ITIKITIK_GESTURES\Sequences\Sequences_2_2_2_2_2_2_2_2\Seq5\Seq5.seq" />
+            <File path="C:\Users\Benjoe\Documents\Omek\GAT\Gesture Packs\ITIKITIK_GESTURES\Sequences\Sequences_2_2_2_2_2_2_2_2_2_2\Seq5\Seq5.seq" />
+            <File path="C:\Users\Benjoe\Documents\Omek\GAT\Gesture Packs\ITIKITIK_GESTURES\Sequences\Sequences_2_2_2_2\Seq5\Seq5.seq" />
+            <File path="C:\Users\Benjoe\Documents\Omek\GAT\Gesture Packs\ITIKITIK_GESTURES\Sequences\Sequences_2_2_2_2_2_2_2_2_2\Seq5\Seq5.seq" />
+            <File path="C:\Users\Benjoe\Documents\Omek\GAT\Gesture Packs\ITIKITIK_GESTURES\Sequences\Sequences_2_2_2_2_2_2_2_2_2_2_2_2\Seq5\Seq5.seq" />
+            <File path="C:\Users\Benjoe\Documents\Omek\GAT\Gesture Packs\ITIKITIK_GESTURES\Sequences\Sequences_2_2_2_2_2_2_2\Seq5\Seq5.seq" />
+            <File path="C:\Users\Benjoe\Documents\Omek\GAT\Gesture Packs\ITIKITIK_GESTURES\Sequences\Sequences_2_2_2\Seq5\Seq5.seq" />
+            <File path="C:\Users\Benjoe\Documents\Omek\GAT\Gesture Packs\ITIKITIK_GESTURES\Sequences\Sequences_2_2_2_2_2_2_2_2_2_2_2\Seq5\Seq5.seq" />
+            <File path="C:\Users\Benjoe\Documents\Omek\GAT\Gesture Packs\ITIKITIK_GESTURES\Sequences\Sequence_3_2_2_2_2\Seq19\Seq19.seq" />
+            <File path="C:\Users\Benjoe\Documents\Omek\GAT\Gesture Packs\ITIKITIK_GESTURES\Sequences\Sequence_3_2_2_2_2_2_2_2_2_2_2_2_2_2\Seq19\Seq19.seq" />
+            <File path="C:\Users\Benjoe\Documents\Omek\GAT\Gesture Packs\ITIKITIK_GESTURES\Sequences\Sequence_3_2_2_2\Seq19\Seq19.seq" />
+            <File path="C:\Users\Benjoe\Documents\Omek\GAT\Gesture Packs\ITIKITIK_GESTURES\Sequences\Sequence_3_2_2_2_2_2_2\Seq19\Seq19.seq" />
+            <File path="C:\Users\Benjoe\Documents\Omek\GAT\Gesture Packs\ITIKITIK_GESTURES\Sequences\Sequence_3_2_2\Seq19\Seq19.seq" />
+            <File path="C:\Users\Benjoe\Documents\Omek\GAT\Gesture Packs\ITIKITIK_GESTURES\Sequences\Sequence_3_2_2_2_2_2_2_2_2_2_2\Seq19\Seq19.seq" />
+            <File path="C:\Users\Benjoe\Documents\Omek\GAT\Gesture Packs\ITIKITIK_GESTURES\Sequences\Sequence_3_2\Seq19\Seq19.seq" />
+            <File path="C:\Users\Benjoe\Documents\Omek\GAT\Gesture Packs\ITIKITIK_GESTURES\Sequences\Sequence_3_2_2_2_2_2_2_2_2_2\Seq19\Seq19.seq" />
+            <File path="C:\Users\Benjoe\Documents\Omek\GAT\Gesture Packs\ITIKITIK_GESTURES\Sequences\Sequence_3_2_2_2_2_2\Seq19\Seq19.seq" />
+            <File path="C:\Users\Benjoe\Documents\Omek\GAT\Gesture Packs\ITIKITIK_GESTURES\Sequences\Sequence_3_2_2_2_2_2_2_2_2_2_2_2_2\Seq19\Seq19.seq" />
+            <File path="C:\Users\Benjoe\Documents\Omek\GAT\Gesture Packs\ITIKITIK_GESTURES\Sequences\Sequence_3_2_2_2_2_2_2_2_2_2_2_2\Seq19\Seq19.seq" />
+        </TestFiles>
+        <OutputFile path="C:\Users\Benjoe\Documents\Omek\GAT\Gesture Packs\ITIKITIK_GESTURES\Build\itikitik_firststep.xml" />
+        <Result avgAccuracy="1" trainAccuracy="1" testAccuracy="1" confusionMatrix="" />
+    </LearningParams>
+    <Gestures framesBefore="3">
+        <Gesture categoryName="itikitik_firststep" gestureName="itikitik_firststep" label="3" />
+        <Gesture categoryName="xnegative" gestureName="xnegative" label="2" />
+        <Gesture categoryName="xnegative" gestureName="itikitik_secondstep" label="2" />
+        <Gesture categoryName="other" gestureName="other" label="1" />
+    </Gestures>
+    <Model fileName="itikitik_firststep.model" />
+    <Date created="1/11/2014 3:24:10 AM" published="" />
+    <Comment value="" />
+</ClassifierParams>

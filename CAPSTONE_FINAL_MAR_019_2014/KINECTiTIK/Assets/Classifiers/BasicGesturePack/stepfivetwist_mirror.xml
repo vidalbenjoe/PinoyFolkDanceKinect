@@ -1,0 +1,27 @@
+<ClassifierParams hidden="false">
+    <GestureDataParams vectorSize="5" voteSize="1" refractoryPeriod="14" isRefractoryPerGroup="true" usePositions="false" usePositionsX="true" usePositionsY="true" usePositionsZ="true" useDeltas="false" useDeltasX="false" useDeltasY="false" useDeltasZ="false" useRelativePositions="false" useRelativePositionsX="false" useRelativePositionsY="false" useRelativePositionsZ="false" useRotation="false" useRotationX="false" useRotationY="false" useRotationZ="false" flipx="true" useHeadConfidence="false" relativeJoint="torso" isRepetitive="true" fps="30">
+        <Joints>
+            <Joint name="rightFoot" X="true" Y="true" Z="true" />
+            <Joint name="torso" X="true" Y="true" Z="true" />
+        </Joints>
+        <Scale normalizeMean="false" normalizeSTD="false" doLocalScale="false" doGlobalScale="false" perCoordScaling="false" useSmooth="false" smoothStrength="0" />
+    </GestureDataParams>
+    <LearningParams useLinear="false" gestureExpand="0" otherOverlap="0.0000" useWeights="true" weightFactor1="0.70" weightFactor2="30" testToleranceRight="2" testToleranceLeft="2" cost="4.00" gamma="-13.00" linearSolver="0" useSynthetic="false">
+        <TrainFiles>
+            <File path="C:\Users\Diaz\Desktop\latest gestures\binasuan\Sequences\Seq21\Seq21.seq" />
+        </TrainFiles>
+        <TestFiles>
+            <File path="C:\Users\Diaz\Desktop\latest gestures\binasuan\Sequences\Seq22\Seq22.seq" />
+        </TestFiles>
+        <OutputFile path="C:\Users\Diaz\Desktop\latest gestures\binasuan\Build\stepfivetwist_mirror.xml" />
+        <Result avgAccuracy="0.9994" trainAccuracy="0.998" testAccuracy="0.988709" confusionMatrix="" />
+    </LearningParams>
+    <Gestures framesBefore="4">
+        <Gesture categoryName="stepfivetwist_mirror" gestureName="stepfivetwist_mirror" label="3" />
+        <Gesture categoryName="xnegative" gestureName="xnegative" label="2" />
+        <Gesture categoryName="other" gestureName="other" label="1" />
+    </Gestures>
+    <Model fileName="stepfivetwist.model" />
+    <Date created="1/19/2014 2:35:47 AM" published="" />
+    <Comment value="" />
+</ClassifierParams>

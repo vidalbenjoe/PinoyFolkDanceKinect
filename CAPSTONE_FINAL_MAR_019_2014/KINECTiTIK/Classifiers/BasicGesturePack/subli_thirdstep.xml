@@ -1,0 +1,37 @@
+<ClassifierParams hidden="false">
+    <GestureDataParams vectorSize="5" voteSize="2" refractoryPeriod="12" isRefractoryPerGroup="true" usePositions="false" usePositionsX="false" usePositionsY="false" usePositionsZ="false" useDeltas="false" useDeltasX="false" useDeltasY="false" useDeltasZ="false" useRelativePositions="true" useRelativePositionsX="true" useRelativePositionsY="true" useRelativePositionsZ="true" useRotation="false" useRotationX="false" useRotationY="false" useRotationZ="false" flipx="false" useHeadConfidence="false" relativeJoint="torso" isRepetitive="true" fps="30">
+        <Joints>
+            <Joint name="head" X="true" Y="true" Z="true" />
+            <Joint name="rightFingerTip" X="true" Y="true" Z="true" />
+            <Joint name="leftFingerTip" X="true" Y="true" Z="true" />
+            <Joint name="hips" X="true" Y="true" Z="true" />
+        </Joints>
+        <Scale normalizeMean="false" normalizeSTD="false" doLocalScale="false" doGlobalScale="false" perCoordScaling="false" useSmooth="false" smoothStrength="0" />
+    </GestureDataParams>
+    <LearningParams useLinear="false" gestureExpand="0" otherOverlap="0.0000" useWeights="true" weightFactor1="0.55" weightFactor2="25" testToleranceRight="2" testToleranceLeft="2" cost="2.50" gamma="-14.00" linearSolver="0" useSynthetic="false">
+        <TrainFiles>
+            <File path="C:\Users\Benjoe\Documents\Omek\GAT\Gesture Packs\subli_gestures_new\Sequences\Seq21\Seq21.seq" />
+            <File path="C:\Users\Benjoe\Documents\Omek\GAT\Gesture Packs\subli_gestures_new\Sequences\Seq21_2\Seq21.seq" />
+            <File path="C:\Users\Benjoe\Documents\Omek\GAT\Gesture Packs\subli_gestures_new\Sequences\Seq21_3\Seq21.seq" />
+        </TrainFiles>
+        <TestFiles>
+            <File path="C:\Users\Benjoe\Documents\Omek\GAT\Gesture Packs\subli_gestures_new\Sequences\Seq21_4\Seq21.seq" />
+            <File path="C:\Users\Benjoe\Documents\Omek\GAT\Gesture Packs\subli_gestures_new\Sequences\Seq21_5\Seq21.seq" />
+            <File path="C:\Users\Benjoe\Documents\Omek\GAT\Gesture Packs\subli_gestures_new\Sequences\Seq21_6\Seq21.seq" />
+            <File path="C:\Users\Benjoe\Documents\Omek\GAT\Gesture Packs\subli_gestures_new\Sequences\Seq21_7\Seq21.seq" />
+            <File path="C:\Users\Benjoe\Documents\Omek\GAT\Gesture Packs\subli_gestures_new\Sequences\Seq21_8\Seq21.seq" />
+            <File path="C:\Users\Benjoe\Documents\Omek\GAT\Gesture Packs\subli_gestures_new\Sequences\Seq21_9\Seq21.seq" />
+            <File path="C:\Users\Benjoe\Documents\Omek\GAT\Gesture Packs\subli_gestures_new\Sequences\Seq21_10\Seq21.seq" />
+        </TestFiles>
+        <OutputFile path="C:\Users\Benjoe\Documents\Omek\GAT\Gesture Packs\subli_gestures_new\Build\subli_thirdstep.xml" />
+        <Result avgAccuracy="1" trainAccuracy="1" testAccuracy="1" confusionMatrix="" />
+    </LearningParams>
+    <Gestures framesBefore="3">
+        <Gesture categoryName="subli_thirdstep" gestureName="subli_thirdstep" label="3" />
+        <Gesture categoryName="xnegative" gestureName="xnegative" label="2" />
+        <Gesture categoryName="other" gestureName="other" label="1" />
+    </Gestures>
+    <Model fileName="subli_thirdstep.model" />
+    <Date created="1/19/2014 6:09:14 PM" published="" />
+    <Comment value="" />
+</ClassifierParams>

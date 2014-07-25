@@ -1,0 +1,29 @@
+<ClassifierParams hidden="false">
+    <GestureDataParams vectorSize="3" voteSize="2" refractoryPeriod="7" isRefractoryPerGroup="true" usePositions="false" usePositionsX="true" usePositionsY="false" usePositionsZ="true" useDeltas="false" useDeltasX="false" useDeltasY="false" useDeltasZ="false" useRelativePositions="false" useRelativePositionsX="false" useRelativePositionsY="true" useRelativePositionsZ="false" useRotation="false" useRotationX="false" useRotationY="false" useRotationZ="false" flipx="false" useHeadConfidence="false" relativeJoint="torso" isRepetitive="true" fps="30">
+        <Joints>
+            <Joint name="head" X="true" Y="true" Z="true" />
+            <Joint name="rightFingerTip" X="true" Y="true" Z="true" />
+            <Joint name="leftFingerTip" X="true" Y="true" Z="true" />
+            <Joint name="hips" X="true" Y="true" Z="true" />
+        </Joints>
+        <Scale normalizeMean="true" normalizeSTD="false" doLocalScale="true" doGlobalScale="false" perCoordScaling="false" useSmooth="false" smoothStrength="0" />
+    </GestureDataParams>
+    <LearningParams useLinear="false" gestureExpand="0" otherOverlap="0.0000" useWeights="true" weightFactor1="0.75" weightFactor2="5" testToleranceRight="2" testToleranceLeft="2" cost="3.00" gamma="-14.00" linearSolver="0" useSynthetic="false">
+        <TrainFiles>
+            <File path="C:\Users\Diaz\Desktop\latest gestures\binasuan\Sequences\Seq50\Seq50.seq" />
+        </TrainFiles>
+        <TestFiles>
+            <File path="C:\Users\Diaz\Desktop\latest gestures\binasuan\Sequences\Seq51\Seq51.seq" />
+        </TestFiles>
+        <OutputFile path="C:\Users\Diaz\Desktop\latest gestures\binasuan\Build\stepeight.xml" />
+        <Result avgAccuracy="0.994556" trainAccuracy="1" testAccuracy="0.995847" confusionMatrix="" />
+    </LearningParams>
+    <Gestures framesBefore="2">
+        <Gesture categoryName="stepeight" gestureName="stepeight" label="3" />
+        <Gesture categoryName="xnegative" gestureName="xnegative" label="2" />
+        <Gesture categoryName="other" gestureName="other" label="1" />
+    </Gestures>
+    <Model fileName="stepeight.model" />
+    <Date created="1/19/2014 10:49:12 AM" published="" />
+    <Comment value="" />
+</ClassifierParams>

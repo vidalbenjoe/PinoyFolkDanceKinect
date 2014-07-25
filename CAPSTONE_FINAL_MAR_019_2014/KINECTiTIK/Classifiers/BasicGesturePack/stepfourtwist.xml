@@ -1,0 +1,30 @@
+<ClassifierParams hidden="false">
+    <GestureDataParams vectorSize="1" voteSize="4" refractoryPeriod="14" isRefractoryPerGroup="true" usePositions="false" usePositionsX="false" usePositionsY="false" usePositionsZ="true" useDeltas="false" useDeltasX="false" useDeltasY="false" useDeltasZ="false" useRelativePositions="false" useRelativePositionsX="false" useRelativePositionsY="true" useRelativePositionsZ="false" useRotation="false" useRotationX="true" useRotationY="false" useRotationZ="false" flipx="false" useHeadConfidence="false" relativeJoint="torso" isRepetitive="true" fps="30">
+        <Joints>
+            <Joint name="leftShoulder" X="true" Y="false" Z="false" />
+            <Joint name="head" X="false" Y="false" Z="true" />
+            <Joint name="rightFoot" X="true" Y="true" Z="false" />
+            <Joint name="leftFingerTip" X="false" Y="true" Z="false" />
+            <Joint name="leftElbow" X="true" Y="true" Z="false" />
+        </Joints>
+        <Scale normalizeMean="false" normalizeSTD="true" doLocalScale="true" doGlobalScale="false" perCoordScaling="true" useSmooth="false" smoothStrength="0" />
+    </GestureDataParams>
+    <LearningParams useLinear="false" gestureExpand="0" otherOverlap="0.0000" useWeights="true" weightFactor1="0.55" weightFactor2="20" testToleranceRight="2" testToleranceLeft="2" cost="3.50" gamma="-13.00" linearSolver="0" useSynthetic="false">
+        <TrainFiles>
+            <File path="C:\Users\Diaz\Desktop\latest gestures\binasuan\Sequences\Seq19\Seq19.seq" />
+        </TrainFiles>
+        <TestFiles>
+            <File path="C:\Users\Diaz\Desktop\latest gestures\binasuan\Sequences\Seq20\Seq20.seq" />
+        </TestFiles>
+        <OutputFile path="C:\Users\Diaz\Desktop\latest gestures\binasuan\Build\stepfourtwist.xml" />
+        <Result avgAccuracy="0.978693" trainAccuracy="0.983108" testAccuracy="0.976828" confusionMatrix="" />
+    </LearningParams>
+    <Gestures framesBefore="0">
+        <Gesture categoryName="stepfourtwist" gestureName="stepfourtwist" label="3" />
+        <Gesture categoryName="xnegative" gestureName="xnegative" label="2" />
+        <Gesture categoryName="other" gestureName="other" label="1" />
+    </Gestures>
+    <Model fileName="stepfourtwist.model" />
+    <Date created="1/19/2014 2:34:41 AM" published="" />
+    <Comment value="" />
+</ClassifierParams>

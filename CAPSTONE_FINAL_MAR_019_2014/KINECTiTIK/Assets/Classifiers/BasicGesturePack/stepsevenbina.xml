@@ -1,0 +1,37 @@
+<ClassifierParams hidden="false">
+    <GestureDataParams vectorSize="5" voteSize="1" refractoryPeriod="1" isRefractoryPerGroup="true" usePositions="false" usePositionsX="false" usePositionsY="false" usePositionsZ="false" useDeltas="false" useDeltasX="false" useDeltasY="false" useDeltasZ="false" useRelativePositions="true" useRelativePositionsX="true" useRelativePositionsY="true" useRelativePositionsZ="true" useRotation="false" useRotationX="false" useRotationY="false" useRotationZ="false" flipx="false" useHeadConfidence="false" relativeJoint="torso" isRepetitive="true" fps="30">
+        <Joints>
+            <Joint name="head" X="true" Y="true" Z="true" />
+            <Joint name="rightFingerTip" X="true" Y="true" Z="true" />
+            <Joint name="leftFingerTip" X="true" Y="true" Z="true" />
+            <Joint name="hips" X="true" Y="true" Z="true" />
+        </Joints>
+        <Scale normalizeMean="true" normalizeSTD="false" doLocalScale="true" doGlobalScale="false" perCoordScaling="false" useSmooth="false" smoothStrength="0" />
+    </GestureDataParams>
+    <LearningParams useLinear="false" gestureExpand="0" otherOverlap="0.0000" useWeights="true" weightFactor1="0.75" weightFactor2="5" testToleranceRight="2" testToleranceLeft="2" cost="3.00" gamma="-14.00" linearSolver="0" useSynthetic="false">
+        <TrainFiles>
+            <File path="C:\Users\MSI\Videos\latest gestures\binasuan\Sequences\Seq48\Seq48.seq" />
+            <File path="C:\Users\MSI\Videos\latest gestures\binasuan\Sequences\Seq48 - Copy\Seq48.seq" />
+            <File path="C:\Users\MSI\Videos\latest gestures\binasuan\Sequences\Seq48 - Copy (2)\Seq48.seq" />
+        </TrainFiles>
+        <TestFiles>
+            <File path="C:\Users\MSI\Videos\latest gestures\binasuan\Sequences\Seq48 - Copy (3)\Seq48.seq" />
+            <File path="C:\Users\MSI\Videos\latest gestures\binasuan\Sequences\Seq48 - Copy (4)\Seq48.seq" />
+            <File path="C:\Users\MSI\Videos\latest gestures\binasuan\Sequences\Seq48 - Copy (5)\Seq48.seq" />
+            <File path="C:\Users\MSI\Videos\latest gestures\binasuan\Sequences\Seq48 - Copy (6)\Seq48.seq" />
+            <File path="C:\Users\MSI\Videos\latest gestures\binasuan\Sequences\Seq48 - Copy (7)\Seq48.seq" />
+            <File path="C:\Users\MSI\Videos\latest gestures\binasuan\Sequences\Seq48 - Copy (8)\Seq48.seq" />
+            <File path="C:\Users\MSI\Videos\latest gestures\binasuan\Sequences\Seq48 - Copy (9)\Seq48.seq" />
+        </TestFiles>
+        <OutputFile path="C:\Users\MSI\Videos\latest gestures\binasuan\Build\stepseven.xml" />
+        <Result avgAccuracy="1" trainAccuracy="1" testAccuracy="1" confusionMatrix="" />
+    </LearningParams>
+    <Gestures framesBefore="3">
+        <Gesture categoryName="stepsevenbina" gestureName="stepsevenbina" label="3" />
+        <Gesture categoryName="xnegative" gestureName="xnegative" label="2" />
+        <Gesture categoryName="other" gestureName="other" label="1" />
+    </Gestures>
+    <Model fileName="stepsevenbina.model" />
+    <Date created="1/30/2014 2:46:35 AM" published="" />
+    <Comment value="" />
+</ClassifierParams>
